@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: moonframe
+Version: 1.0.0
+Summary: A lightweight 2D game engine built on Pyglet
+Author: Samin
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: pyglet
+Dynamic: author
+Dynamic: classifier
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
