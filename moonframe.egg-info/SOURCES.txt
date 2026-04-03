@@ -1,8 +1,0 @@
-LICENSE
-README.md
-setup.py
-moonframe.egg-info/PKG-INFO
-moonframe.egg-info/SOURCES.txt
-moonframe.egg-info/dependency_links.txt
-moonframe.egg-info/requires.txt
-moonframe.egg-info/top_level.txt
