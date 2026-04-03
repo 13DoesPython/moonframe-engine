@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# moonframe-engine
-A game-development framework built on top of pyglet
-=======
 # MoonFrame
 
 MoonFrame is a Python game development framework built on top of Pyglet. It provides a simple and intuitive API for creating 2D games, handling graphics, input, and more. Its kinda like a mix between Pygame and SDL2, but with a more modern and Python design. This README will give you a quick overview of how to get started with MoonFrame and what features it offers.
@@ -98,4 +94,3 @@ MoonFrame is licensed under the MIT License. See the LICENSE file for more detai
 
 ## Version History
 - **1.0.0** - Initial release with basic window management, rendering, and input handling.
->>>>>>> 250bc01 (MoonFrame 1.0.0 Release)
