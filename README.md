@@ -2,6 +2,11 @@
 
 MoonFrame is a Python game development framework built on top of Pyglet. It provides a simple and intuitive API for creating 2D games, handling graphics, input, and more. Its kinda like a mix between Pygame and SDL2, but with a more modern and Python design. This README will give you a quick overview of how to get started with MoonFrame and what features it offers.
 
+## Example files
+You can find example files in the `examples` directory of the MoonFrame repository. These examples demonstrate various features of the framework, such as rendering textures, handling input, and implementing game loops. Feel free to explore these examples to get a better understanding of how to use MoonFrame in your own projects.
+
+- [coolcat.py](examples/coolcat.py): A more advanced example that demonstrates a simple game with a cat texture that can be moved around the screen.
+
 ## Installation
 You can install MoonFrame using pip:
 
@@ -21,14 +26,13 @@ class GameApp:
         self.input = input_handler
         self.x, self.y = 100, 100
         
-        # Load a texture
-        self.cat = mfr.Texture(renderer, "cat.avif", x=self.x, y=self.y)
+        self.cat = mfr.Texture(renderer, r"cat.avif", x=self.x, y=self.y)
         self.cat.resize(128, 128)
 
     def update(self):
         if self.input.is_key_pressed('right'): self.x += 5
-        if self.input.is_key_pressed('down'): self.y += 5
-        if self.input.is_key_pressed('up'): self.y -= 5
+        if self.input.is_key_pressed('down'): self.y -= 5
+        if self.input.is_key_pressed('up'): self.y += 5
         if self.input.is_key_pressed('left'): self.x -= 5
 
         self.cat.set_pos(self.x, self.y)
@@ -37,7 +41,7 @@ class GameApp:
         self.renderer.set_draw_color(20, 20, 30)
         self.renderer.clear()
 
-win = mfr.Window(800, 600, "MoonFrame Test")
+win = mfr.Window("Suburban Cat", 800, 600)
 renderer = mfr.Renderer(win)
 event = mfr.Event()
 input_handler = mfr.Input(win)
@@ -93,4 +97,24 @@ Contributions to MoonFrame are welcome! If you have an idea for a new feature or
 MoonFrame is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Version History
+- **1.1.0** - **Highlight**: Added new `Text` and `Sound` class:
+    - **Text**:
+        - Make text object `mfr.Text(renderer, text, x, y, font_name, font_size, color)`
+        - Added `set_text()` method for changing the text
+        - Added `change_color()` method for changing color of the text
+        - Added `change_size()` method for changing size of the text
+        - Added `change_font()` method for changing font of the text
+        - Added `set_pos` method for changing the coordinates of the text
+
+    - **Sound**:
+        - Make audio object: `mfr.Sound(path)`
+        - Added `play()` method to play audio
+        - Added `stop()` method to stop audio
+        - Added `pause()` method to pause audio
+        - Added `set_volume()` method to change volume of audio
+        - Added `is_playing()` method to check if audio is playing or not
+    
+    - Added various mouse control methods and also callback methods to the `Input` class
+    - Added two examples to the examples folder for noobs to see and learn from
+
 - **1.0.0** - Initial release with basic window management, rendering, and input handling.
