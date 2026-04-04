@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: moonframe-engine
-Version: 1.1.0
+Version: 1.1.1
 Summary: A lightweight 2D game engine built on Pyglet
 Home-page: https://github.com/YourUsername/MoonFrame
 Author: Samin
@@ -102,6 +102,8 @@ win.handle.close()
 - `Drawable`: Base class for drawable objects.
 - `Event`: Handle various events in the game loop.
 - `Collision`: Utility class for collision detection and response.
+- `Text`: Class for displaying text on the screen
+- `Audio`: Handles any music and sfx
 
 ### Methods
 - `Window.poll_event()`: Poll for events from the window.

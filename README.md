@@ -1,6 +1,7 @@
 # MoonFrame
 
 MoonFrame is a Python game development framework built on top of Pyglet. It provides a simple and intuitive API for creating 2D games, handling graphics, input, and more. Its kinda like a mix between Pygame and SDL2, but with a more modern and Python design. This README will give you a quick overview of how to get started with MoonFrame and what features it offers.
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/moonframe-engine?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/moonframe-engine)
 
 ## Example files
 You can find example files in the `examples` directory of the MoonFrame repository. These examples demonstrate various features of the framework, such as rendering textures, handling input, and implementing game loops. Feel free to explore these examples to get a better understanding of how to use MoonFrame in your own projects.
