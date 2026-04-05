@@ -5,15 +5,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="moonframe-engine",
-    version="1.1.1",
+    version="1.1.3",
     author="Samin",
     description="A lightweight 2D game engine built on Pyglet",
     long_description=long_description,
     long_description_content_type="text/markdown", # This clears the warning
-    url="https://github.com/YourUsername/MoonFrame", # Link to your repo
+    url="https://github.com/13DoesPython/moonframe-engine.", # Link to your repo
     packages=find_packages(),
     install_requires=[
         "pyglet",
+        "mouse"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
